@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    padding: 2rem;
+    background: linear-gradient(to right bottom, rgba(77, 179, 118, 0.798) 0%,yellow 30%, rgba(168, 200, 208, 0.712) 90%);
+    height: 100vh;
+    cursor: url("./img/cursor.cur"), auto;
+}
+
+section{
+    display: flex;
+    height: 300px;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 4s ease;
+}
+
+section img:hover{
+    width: 300px;
+    opacity: 1;
+    filter:contrast(120%);
+}
+
+section img:first-child{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+section img:last-child{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+h1{
+    cursor: cell;
+    font-family: "Oi", serif;
+    font-weight: 100;
+    font-style: normal;    
+    text-shadow: 5px 5px 2px white;
+    text-align: center;
+    font-size: 2rem;
+}
